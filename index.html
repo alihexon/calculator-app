@@ -8,6 +8,7 @@
 </head>
 
 <body>
+  <p class="calculation-display"></p>
   <div class="row">
     <button onclick="clearCalculation();">
       C
@@ -62,7 +63,7 @@
     <button onclick="updateCalculation('0');">
       0
     </button>
-    <button onclick="calculation = eval(calculation); console.log(calculation)">
+    <button onclick="doCalculation();">
       =
     </button>
   </div>
