@@ -17,9 +17,24 @@
   );
 }
 
+.calculator {
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(60px);
+  padding: 25px 30px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 8px;
+}
+
 .calculation-display {
-  color: white;
-  font-size: 36px;
+  background-color: white;
+  display: flex;
+  justify-content: end;
+  font-size: 2.3em;
+  border-radius: 12px;
+  padding: 10px 15px;
   margin-bottom: 20px;
 }
 
@@ -30,7 +45,7 @@
 
 .btn-wrapper {
   display: grid;
-  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 10px;
   row-gap: 20px;
 }
@@ -38,7 +53,7 @@
 .number-btn,
 .symbol-btn,
 .clear-btn {
-  font-size: 26px;
+  font-size: 1.5em;
   width: 50px;
   height: 50px;
   padding: 27px;
