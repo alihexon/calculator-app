@@ -22,7 +22,11 @@ function doCalculation() {
 
 document.querySelectorAll(".calc-btn").forEach((button) => {
   button.addEventListener("click", () => {
-    const value = this.getAttribute("data-value");
+    if (button.innerText === "=" || button.innerText === "C") {
+      return;
+    }
+
+    const value = button.getAttribute("data-value");
     updateCalculation(value);
   });
 });
