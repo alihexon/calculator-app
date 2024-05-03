@@ -1,9 +1,7 @@
-let calculation = localStorage.getItem("storedCalculation") || "";
+let calculation = localStorage.getItem("storedCalculation") || "0";
 const calculationDisplay = document.querySelector(".screen");
 
-if (calculation === localStorage.getItem("storedCalculation")) {
-  calculationDisplay.innerHTML = calculation;
-}
+calculationDisplay.innerHTML = calculation;
 
 function updateCalculation(value) {
   calculation += value;
@@ -12,7 +10,7 @@ function updateCalculation(value) {
 }
 
 function clearCalculation() {
-  calculation = "";
+  calculation = "0";
   calculationDisplay.innerHTML = calculation;
   localStorage.setItem("storedCalculation", calculation);
 }
