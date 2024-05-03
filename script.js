@@ -19,3 +19,10 @@ function doCalculation() {
   calculationDisplay.textContent = calculation;
   localStorage.setItem("storedCalculation", calculation);
 }
+
+document.querySelectorAll(".calc-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    const value = this.getAttribute("data-value");
+    updateCalculation(value);
+  });
+});
