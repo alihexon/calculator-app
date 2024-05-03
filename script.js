@@ -6,7 +6,6 @@ calculationDisplay.innerHTML = calculation;
 function updateCalculation(value) {
   calculation += value;
   calculationDisplay.innerHTML = calculation;
-  localStorage.setItem("storedCalculation", calculation);
 }
 
 function clearCalculation() {
@@ -18,4 +17,5 @@ function clearCalculation() {
 function doCalculation() {
   calculation = eval(calculation);
   calculationDisplay.innerHTML = calculation;
+  localStorage.setItem("storedCalculation", calculation);
 }
