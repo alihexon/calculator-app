@@ -61,6 +61,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.calc-btn:hover {
+  background-color: #f1f1f1;
+}
+
+.calc-btn:active {
+  opacity: 0.7;
+}
+
+.button-row .calc-btn:last-child {
+  background-color: rgb(172, 233, 92);
+}
+
+.button-row .calc-btn:last-child:hover {
+  background-color: rgb(150, 209, 73);
 }
 
 .width-2 {
@@ -69,10 +87,6 @@ body {
 
 .width-3 {
   flex-basis: 73.5%;
-}
-
-.button-row .calc-btn:last-child {
-  background-color: rgb(254, 160, 10);
 }
 
 .clear-btn {
