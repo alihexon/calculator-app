@@ -12,7 +12,10 @@
       <p class="screen"></p>
       <div class="button-rows">
         <div class="button-row">
-          <button class="calc-btn" onclick="clearCalculation();">C</button>
+          <button class="calc-btn clear-btn" onclick="clearCalculation();">
+            C
+          </button>
+          <button class="calc-btn" onclick="updateCalculation('.');">.</button>
           <button class="calc-btn" onclick="updateCalculation(' / ');">
             &divide;
           </button>
@@ -43,7 +46,6 @@
         </div>
         <div class="button-row">
           <button class="calc-btn" onclick="updateCalculation('0');">0</button>
-          <button class="calc-btn" onclick="updateCalculation('.');">.</button>
           <button class="calc-btn" onclick="doCalculation();">=</button>
         </div>
       </div>
