@@ -1,20 +1,20 @@
-let calculation = localStorage.getItem('storedCalculation') || '';
-const calculationDisplay = document.querySelector('.calculation-display');
+let calculation = localStorage.getItem("storedCalculation") || "";
+const calculationDisplay = document.querySelector(".screen");
 
-if (calculation === localStorage.getItem('storedCalculation')) {
+if (calculation === localStorage.getItem("storedCalculation")) {
   calculationDisplay.innerHTML = calculation;
 }
 
 function updateCalculation(value) {
   calculation += value;
   calculationDisplay.innerHTML = calculation;
-  localStorage.setItem('storedCalculation', calculation);
+  localStorage.setItem("storedCalculation", calculation);
 }
 
 function clearCalculation() {
-  calculation = '';
+  calculation = "";
   calculationDisplay.innerHTML = calculation;
-  localStorage.setItem('storedCalculation', calculation);
+  localStorage.setItem("storedCalculation", calculation);
 }
 
 function doCalculation() {
