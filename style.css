@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-.container {
+body {
   display: flex;
   align-items: center;
   min-height: 100vh;
@@ -28,7 +28,7 @@
   box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 8px;
 }
 
-.calculation-display {
+.screen {
   background-color: white;
   display: flex;
   justify-content: end;
