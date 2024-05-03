@@ -1,22 +1,27 @@
 let calculation = localStorage.getItem("storedCalculation") || "0";
-const calculationDisplay = document.querySelector(".screen");
+const screen = document.querySelector(".screen");
 
-calculationDisplay.textContent = calculation;
+screen.textContent = calculation;
 
 function updateCalculation(value) {
-  calculation += value;
-  calculationDisplay.textContent = calculation;
+  if (calculation == 0) {
+    calculation = value;
+  } else {
+    calculation += value;
+  }
+
+  screen.textContent = calculation;
 }
 
 function clearCalculation() {
   calculation = "0";
-  calculationDisplay.textContent = calculation;
+  screen.textContent = calculation;
   localStorage.setItem("storedCalculation", calculation);
 }
 
 function doCalculation() {
   calculation = eval(calculation);
-  calculationDisplay.textContent = calculation;
+  screen.textContent = calculation;
   localStorage.setItem("storedCalculation", calculation);
 }
 
