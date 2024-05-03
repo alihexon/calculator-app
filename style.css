@@ -49,9 +49,11 @@ body {
   display: flex;
 }
 
-.number-btn,
-.symbol-btn,
-.clear-btn {
+.button-row:last-child {
+  background-color: rgb(254, 160, 10);
+}
+
+.calc-btn {
   font-size: 1.5em;
   font-weight: 700;
   height: 50px;
@@ -65,7 +67,6 @@ body {
 }
 
 .symbol-btn {
-  background-color: rgb(254, 160, 10);
 }
 
 .clear-btn {
