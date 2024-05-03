@@ -38,11 +38,15 @@ body {
   margin-bottom: 20px;
 }
 
-.btn-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+.button-rows {
+  display: flex;
+  flex-direction: column;
   column-gap: 10px;
   row-gap: 20px;
+}
+
+.button-row {
+  display: flex;
 }
 
 .number-btn,
