@@ -21,13 +21,13 @@ body {
 
 .calculator {
   width: 400px;
+  padding: 25px 30px;
+  margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(60px);
-  padding: 25px 30px;
-  margin: 0 auto;
-  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 8px;
+  border-radius: 10px;
 }
 
 .screen {
@@ -43,8 +43,7 @@ body {
 .button-rows {
   display: flex;
   flex-direction: column;
-  column-gap: 10px;
-  row-gap: 20px;
+  gap: 20px;
 }
 
 .button-row {
