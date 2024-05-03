@@ -35,3 +35,7 @@ document.querySelectorAll(".calc-btn").forEach((button) => {
     updateCalculation(value);
   });
 });
+
+document.querySelector(".clear-btn").addEventListener("click", () => {
+  clearCalculation();
+});
